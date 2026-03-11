@@ -1,0 +1,14 @@
+Why two pointers works on a sorted array
+Difference between merge and rebase
+Difference between INNER JOIN and LEFT JOIN
+
+
+because we can traverse left or right based on the situation
+whether the result is smaller or greater
+
+merge is to combine a branch with the main branch as one while
+rebase is when we want linear commits and make the main as the parent 
+of the particular branch
+
+inner join selects rows with same values while left join
+takes the left table fully with same valued rows in right table
