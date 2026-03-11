@@ -1,75 +1,111 @@
-# SC GDE Prep
+<div align="center">
 
-**अभ्यास + consistency + clarity**
+# 🪔 मिशन SC — Mission Standard Chartered
 
-This repository is my pre-joining preparation space for the Standard Chartered Graduate Development Engineer journey.
-It is a small but growing **sadhana-sthal** for:
+### *Graduate Development Engineer · Preparation Sadhana*
 
-- Data Structures and Algorithms
-- Core Python practice
-- SQL revision
+---
 
-The goal is simple: **daily improvement, clean logic, and steady discipline**.
+> **"उद्यमेन हि सिध्यन्ति कार्याणि न मनोरथैः।"**
+>
+> *Goals are achieved through effort, not mere wishes.*
+
+---
+
+</div>
+
+## अभिप्राय | Purpose
+
+This repository is my **sadhana-sthal** — a sacred space of disciplined practice — built in the weeks before joining Standard Chartered as a **Graduate Development Engineer**.
+
+It is not a collection of random notes.  
+It is a **krama** — a deliberate, structured path — of three pillars:
+
+| विषय | Subject | Focus |
+|------|---------|-------|
+| 🌿 **DSA** | Data Structures & Algorithms | Patterns, clarity, speed |
+| 🐍 **Python** | Core language mastery | Concepts, OOP, idioms |
+| 🗄️ **SQL** | Query & schema practice | Logic, fluency, depth |
+
+---
 
 ## दृष्टि | Vision
 
-This repo is built around one idea:
+> **"नित्यं अभ्यासः, शनैः प्रगतिः।"**
+>
+> *Daily practice. Gradual, unshakeable progress.*
 
-> **नित्यं अभ्यासः, शनैः प्रगति:।**  
-> Daily practice, gradual progress.
+Not speed over understanding. Not breadth over depth.  
+Each problem solved here is a **tapas** — a small but real act of discipline.
 
-Instead of collecting random notes, this workspace focuses on writing code, solving problems, and strengthening fundamentals with intent.
+---
 
-## Repository Map
+## विभाग-दर्शनम् | Repository Map
 
-### SC-Prep/DSA/
-Problem-solving practice for interview preparation.
+```
+mission_sc/
+└── SC-Prep/
+    ├── DSA/
+    │   └── Arrays/
+    │       └── two_pointers/
+    │           ├── two_sum_II.py        ← Classic sliding window
+    │           └── valid_palindrome.py  ← Two-pointer elegance
+    │
+    ├── Python_Tutorials/
+    │   ├── abstract_account.py          ← Abstraction & ABC
+    │   ├── bank_account.py              ← OOP fundamentals
+    │   ├── decorators1.py               ← Function wrapping
+    │   ├── generators.py                ← Lazy evaluation
+    │   └── savings_account.py           ← Inheritance in practice
+    │
+    └── SQL/
+        ├── day2_accounts.sql            ← Schema + DML
+        └── day3.sql                     ← Query logic
+```
 
-- **Arrays/two_pointers/**
-	- `two_sum_II.py`
-	- `valid_palindrome.py`
+---
 
-### SC-Prep/Python_Tutorials/
-Hands-on Python concept revision and small practice files.
+## कार्यपद्धति | Workflow
 
-- `abstract_account.py`
-- `bank_account.py`
-- `decorators1.py`
-- `generators.py`
-- `savings_account.py`
+Each day follows a simple **karma-chakra**:
 
-### SC-Prep/SQL/
-SQL exercises and schema/query practice.
+1. **मनन** — *Think.* Understand the problem before touching the keyboard.
+2. **लेखन** — *Write.* Code it locally in VS Code with clarity.
+3. **परीक्षण** — *Test.* Run against personal examples, then edge cases.
+4. **परिमार्जन** — *Refine.* Clean for readability, not just correctness.
+5. **स्मरण** — *Remember.* Commit only what is understood, not just copied.
 
-- `day2_accounts.sql`
-- `day3.sql`
+---
 
-## Workflow | कार्यपद्धति
+## सिद्धान्त | Principles
 
-- Write solutions locally in VS Code
-- Test with personal examples first
-- Refine for readability and correctness
-- Verify against platform expectations where needed
+> **श्रद्धावान् लभते ज्ञानम्।**
+> *The devoted one attains knowledge.*
 
-## Why This Repo Exists
+- **अभ्यास over shortcuts** — Practice over quick hacks
+- **बोध over memorisation** — Understanding over rote answers
+- **धैर्य over haste** — Patience over panic
+- **सातत्य over intensity** — Consistency over cramming
 
-This is not just a folder of files. It is a record of preparation.
+---
 
-- **Code with understanding, not memorization**
-- **Practice with patience, not haste**
-- **Progress with discipline, not randomness**
+## स्थिति | Current Status
 
-Or in short:
+This repository is **जीवित** — alive and growing.
 
-> **श्रद्धा in learning, shakti in practice, and pragati in code.**
+More DSA patterns, deeper Python modules, and complex SQL queries will be added as the journey continues.  
+Every commit is a step. Every solution is a **प्रणाम** to the craft.
 
-## Ongoing Status
+---
 
-This repository is actively growing.
-More DSA patterns, Python notes, and SQL practice will be added over time.
+<div align="center">
 
-## Closing Note
+**कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।**
 
-**कर्मण्येवाधिकारस्ते** meets consistent engineering prep here.
+*You have the right to act. Do it well. The rest follows.*
 
-One problem, one concept, one query at a time.
+---
+
+*Crafted with focus · Committed with discipline · Built for Standard Chartered GDE*
+
+</div>
