@@ -17,4 +17,4 @@ def two_sum_II(nums, target):
 if __name__ == "__main__":
     assert two_sum_II([1, 2, 4, 8], 3) == [1, 2]
     assert two_sum_II([1, 3, 5, 7, 9], 16) == [4, 5]
-    assert two_sum_II([3, 4, 5, 6, 10], 9) == [1, 4]
+    assert two_sum_II([3, 4, 7, 6, 10], 9) == [1, 4]
