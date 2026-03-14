@@ -1,0 +1,2 @@
+Two pointer method is useful when we need to find two positions
+simultaneously and to stay at O(n) time and O(1) space.

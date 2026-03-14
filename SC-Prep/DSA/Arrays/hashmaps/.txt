@@ -1,0 +1,3 @@
+Instead of nested loops O(n^2) traverse once, store
+meaningful data, answer future lookups in O(1).
+### Trade space for time ###
