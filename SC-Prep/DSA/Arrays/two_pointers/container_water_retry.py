@@ -3,6 +3,9 @@
 # water contained = width(right - left) * min(array[left], array[right])
 # move the pointer inwards whichever has smaller height
 
+# Time complexity - O(n) - single pass with two pointers
+# Space comlexity - O(1) - no extra data structures
+
 def max_area(height: list[int]) -> int:
 
     left = 0
