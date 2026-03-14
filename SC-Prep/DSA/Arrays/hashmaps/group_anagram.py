@@ -9,3 +9,6 @@ def groupAnagrams(strs):
             d[key] = [word]
 
     return list(d.values())
+
+
+assert groupAnagrams(["ani", "ina", "nia", "car", "arc"]) == [["ani", "ina", "nia"], ["car", "arc"]]
