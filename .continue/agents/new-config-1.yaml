@@ -1,0 +1,9 @@
+name: Local Config
+version: 1.0.0
+schema: v1
+models:
+  - title: "GLM-5 (NVIDIA)"
+    provider: "openai"
+    model: "z-ai/glm5"
+    apiKey: "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" 
+    apiBase: "https://integrate.api.nvidia.com/v1"
