@@ -6,6 +6,7 @@
 # remove left element, move left
 # Time: O(n) - each element enters and leaves window 
 # at most once
+# Space Complexity - O(1)
 
 def maximum_sub_array(nums, k):
     
