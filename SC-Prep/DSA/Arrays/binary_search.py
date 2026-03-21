@@ -1,4 +1,6 @@
 
+# time complexity: O(log n)
+# space complexity: O(1)
 
 def binary_search(nums, target):
 
