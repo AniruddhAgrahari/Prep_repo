@@ -1,0 +1,9 @@
+# BINARY SEARCH VARIANTS
+# Classic search      → while start <= end, return mid or -1
+# Search insert pos   → while start <= end, return start after loop
+# Rotated array min   → while start < end, return nums[start] after loop
+#
+# mid = (start + end) // 2  — ALWAYS this formula
+# Found → return mid
+# Too big → end = mid - 1
+# Too small → start = mid + 1
