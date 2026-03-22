@@ -6,26 +6,27 @@ class InsufficientFundsError(Exception):
 class BankAccount:
     def __init__(self, owner:str, balance:float = 0.0):
         self.owner = owner
-        self.__balance = balance
-        self.__transactions = []
+        self._balance = balance
+        self._transactions = []
 
     def deposit(self, amount: float) -> None:
-        self.__balance += amount
-        self.__transactions.append(("deposit", amount))
+        self._balance += amount
+        self._transactions.append(("deposit", amount))
 
     def withdraw(self, amount: float) -> None:
-        if amount <= self.__balance:
-            self.__balance -= amount
-            self.__transactions.append(("withdraw", amount))
+        if amount > self._balance:
+            raise InsufficientFundsError
+            self._balance -= amount
+            self._transactions.append(("withdraw", amount))
         else:
             raise InsufficientFundsError
 
     @property
     def balance(self) -> float:
-        return self.__balance
+        return self._balance
     
     def get_transactions(self):
-        for transaction in self.__transactions:
+        for transaction in self._transactions:
             yield transaction
 
 

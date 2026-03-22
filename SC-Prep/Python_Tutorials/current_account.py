@@ -11,7 +11,8 @@ class CurrentAccount(BankAccount):
         total_limit = self.balance + self.overdraft
         if amount > (total_limit):
             raise InsufficientFundsError
-        super().withdraw(amount)
+        self._balance -= amount
+        self._transactions.append(("withdraw", amount))
 
     def calculate_interest(self, time):
         return 0
@@ -30,3 +31,7 @@ except InsufficientFundsError:
 
 acc3 = CurrentAccount("Harshal", 5500, 500)
 acc3.calculate_interest(1)
+
+acc4 = CurrentAccount("Aniruddh", 1000, 500)
+acc4.withdraw(1200)
+print(acc4.balance)  # What do you expect?
