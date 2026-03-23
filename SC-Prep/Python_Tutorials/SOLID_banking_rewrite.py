@@ -114,3 +114,18 @@ try:
     assert False
 except MinimumBalanceError:
     pass
+
+acc4 = CurrentAccount("Aniru", 2000, 200)
+acc4.withdraw(400)
+assert acc4.balance == 1600
+
+acc5 = CurrentAccount("Aryan", 1500, 125)
+acc5.withdraw(1600)
+assert acc5.balance == -100
+
+acc6 = CurrentAccount("Sachin", 2500, 250)
+try:
+    acc6.withdraw(3000)
+    assert False
+except InsufficientFundsError:
+    pass
