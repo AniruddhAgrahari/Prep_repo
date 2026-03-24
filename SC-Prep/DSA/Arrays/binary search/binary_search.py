@@ -1,4 +1,6 @@
-
+# left + (right - left) // 2 gives the same 
+# mathematical result but never adds two large numbers together, 
+# so overflow is impossible.
 # time complexity: O(log n)
 # space complexity: O(1)
 
