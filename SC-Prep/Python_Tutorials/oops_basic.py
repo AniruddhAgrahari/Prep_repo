@@ -41,13 +41,49 @@ class BankAccount:
         self._balance -= amount
         print(f"{self.owner}'s new balance: {self._balance}")
 
+class SavingsAccount(BankAccount):
+    def __init__(self, owner, balance, interest_rate):
+        super().__init__(owner, balance) 
+        self.interest_rate = interest_rate
+
+class CurrentAccount(BankAccount):
+    def __init__(self, owner, balance, overdraft_limit):
+        super().__init__(owner, balance)
+        self.overdraft_limit = overdraft_limit
+
+    def withdraw(self, amount):
+        total_withdrawable = self._balance + self.overdraft_limit
+        if amount > total_withdrawable:
+            raise MinimumFundsError(f"Insufficient Funds for {self.owner} - attempted:{amount}, available:{total_withdrawable}")
+        self._balance -= amount
+
+
+
+
 aniruddh_account = BankAccount("Aniruddh", 100000)
 aaddya_account = BankAccount("Aaddya", 8000)
 
+current = CurrentAccount("Aniruddh", 5000, 10000)
+print(current.balance)      # 5000
 
+current.withdraw(3000)
+print(current.balance)      # 2000 — normal withdrawal
 
-print(BankAccount.validate_account_number(1234567890))  # True
-print(BankAccount.validate_account_number(123))          # False
+current.withdraw(8000)
+print(current.balance)      # -6000 — overdraft used
+
+try:
+    current.withdraw(5000)  # should fail — exceeded overdraft
+except MinimumFundsError as e:
+    print(e)
+
+# savings = SavingsAccount("Aniruddh", 15000, 0.04)
+# print(savings.owner)
+# print(savings.balance)
+# print(savings.interest_rate)
+
+# print(BankAccount.validate_account_number(1234567890))  # True
+# print(BankAccount.validate_account_number(123))          # False
 # student_account = BankAccount.create_student_account("Aniruddh")
 # print(student_account.owner)
 # print(student_account.balance)
