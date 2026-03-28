@@ -1,0 +1,9 @@
+1. git checkout -b feature/your-feature-name     # create branch
+2. [write code, make commits]
+3. git push -u origin feature/your-feature-name  # push branch
+4. Raise PR on GitHub with proper description
+5. Get reviewed and merged
+6. git checkout main                             # switch back
+7. git pull origin main                          # sync local main
+8. git branch -d feature/your-feature-name      # delete local
+9. git push --delete origin feature/your-feature-name  # delete remote
