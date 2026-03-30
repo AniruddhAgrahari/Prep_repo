@@ -3,6 +3,8 @@
 # left   = stack[-1] + 1  if stack else 0
 # width  = right - left
 # area   = height × width
+# time complexity - O(n)
+# Space complexity - O(n)
 
 def largest_rect_area(heights):
     stack = []
