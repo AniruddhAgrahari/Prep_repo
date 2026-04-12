@@ -1,4 +1,5 @@
-
+#TC - O(log n)
+#SC - O(log n)
 def power_naive(base, exp):
     if exp == 0:
         return 1
