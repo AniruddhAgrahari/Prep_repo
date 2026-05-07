@@ -1,8 +1,6 @@
 #Account class that holds balance and performs deposit/withdraw operations.
 from datetime import datetime
 
-class MinimumFundsError(Exception):
-    pass
 class InsufficientFundsError(Exception):
      pass
 
@@ -41,7 +39,7 @@ class Account:
 
     def withdraw(self, amount):
          if amount > self.__balance:
-              raise MinimumFundsError
+              raise InsufficientFundsError
          else:
               self.__balance -= amount
               transaction_history = {
@@ -62,8 +60,8 @@ class SavingsAccount(Account):
      def withdraw(self, amount):
           usable_amount = self.balance - self.min_bal
           if amount > usable_amount:
-               raise MinimumFundsError
-          super().withdraw(amount)\
+               raise InsufficientFundsError
+          super().withdraw(amount)
         
 class CurrentAccount(Account):
      def __init__(self, owner, account_id, overdraft, balance = 0):

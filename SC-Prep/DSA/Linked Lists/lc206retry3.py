@@ -1,8 +1,8 @@
+#time complexity: O(n)
+#space complexity: O(1) - only 3 pointers no extra space
 
-#time complexity - O(n)
-#space complexity - 
 
-def reversed_list(head):
+def reversedlinkedlist(head):
 
     prev = None
     curr = head
